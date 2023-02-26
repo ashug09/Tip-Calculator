@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Tip Calculator</title>
+    <!--   google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Roboto+Mono:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--   bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!--   bulma -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <!--   tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="flex justify-center">
+      <div class="clr m-20 rounded-lg flex flex-col">
+        <input
+        id="amt"
+          class="mt-10 mx-auto w-52 rounded-full input is-primary clr_input"
+          type="number"
+          placeholder="Amount in Rs."
+        />
+        <input
+        id="tip"
+          class="mt-10 mx-auto w-52 rounded-full input is-primary clr_input"
+          type="number"
+          placeholder="Tip in %"
+        />
+        <div class="flex justify-between mx-4">
+          <div class="m-0 p-0 h-2">
+            <h4 class="mt-8">Total Amount Per Person</h4>
+            <h6 id="amt_display">$0.00</h6>
+          </div>
+          <div class="flex justify-evenly mt-10 w-20">
+            <button id="incre" class="rounded-full btn_color h-8 w-8">+</button>
+            <h6 id="people" class="mt-2 mx-1">1</h6>
+            <button id="decre" class="rounded-full btn_color h-8 w-8">-</button>
+          </div>
+        </div>
+        <button id="submit" class="mt-10 w-20 h-10 mx-auto rounded-full btn_color">
+          SUBMIT
+        </button>
+        <h6 class="mt-10 mx-auto">ASHU'S Co.</h6>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://replit.com/public/js/replit-badge.js"
+      theme="blue"
+      defer
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Nunito';
+    font-weight: 500;
+  }
+  .clr{
+    background-color: #579BB1;
+    height: 400px;
+    width: 280px;
+  }
+  .clr_input{
+    background-color: #ECE8DD;
+  }
+  .btn_color{
+    background-color: #E1D7C6;
+  }
