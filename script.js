@@ -7,8 +7,12 @@ const decre = document.getElementById("decre");
 const people = document.getElementById("people");
 let numberOfPeople = 1;
 
+
 submit.onclick = () => {
   totalAmt();
+  amount.value == "" ? alert("Please, Enter Some Amount") : null;
+  tip.value == "" ? alert("Please, Enter Some Tip") : null;
+  amount.value == "" && tip.value == "" ? alert("Please, Enter Some Amount and Tip") : alert("Thank You" + "\n" + "Your Tip is " + tip.value + "%" + "\n" + "Your Total Amount is " + amt_display.innerHTML + "\n" + "Number of People is " + numberOfPeople);
 };
 
 incre.onclick = () => {
@@ -35,7 +39,7 @@ const increment = () => {
 };
 
 const decrement = () => {
-  if (numberOfPeople === 1) return alert("chomu paise tera chacha dega");
+  if (numberOfPeople === 1) return alert("Minimum number of people is 1");
   numberOfPeople--;
   people.innerHTML = numberOfPeople;
   totalAmt();
