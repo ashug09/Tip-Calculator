@@ -10,7 +10,7 @@ let numberOfPeople = 1;
 
 submit.onclick = () => {
   totalAmt();
-  amount.value == "" && tip.value == "" ? alert("Please, Enter Some Amount and Tip") : alert("Thank You" + "\n" + "Your Tip is " + tip.value + "%" + "\n" + "Your Total Amount is " + amt_display.innerHTML + "\n" + "Number of People is " + numberOfPeople);
+  (amount.value === "" || tip.value === "") ? alert("Please, Enter Some Amount and Tip") : alert("Thank You" + "\n" + "Your Tip is " + tip.value + "%" + "\n" + "Your Total Amount is " + amt_display.innerHTML + "\n" + "Number of People is " + numberOfPeople);
 };
 
 incre.onclick = () => {
