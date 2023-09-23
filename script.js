@@ -28,7 +28,7 @@ const totalAmt = () => {
   let tipped = Number(tip.value);
   let total = Number(amt + amt * (tipped / 100));
   let perPerson = total / numberOfPeople;
-  amt_display.innerHTML = `$${perPerson.toFixed(2)}`;
+  amt_display.innerHTML = `₹${perPerson.toFixed(2)}`;
   //alert(`total amount with tip in percentage is ${total}`);
 };
 
