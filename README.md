@@ -16,7 +16,7 @@ Welcome to the Tip Calculator! This is a simple web application that calculates 
 
 ## Demo
 
-Check out the live demo [here](https://yourusername.github.io/tip-calculator/).
+Check out the live demo [here](https://tipcalculator-eight.vercel.app).
 
 ## Installation
 
